@@ -1,0 +1,175 @@
+.clientes-container {
+  padding: 24px;
+  color: white;
+}
+
+.clientes-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #a5b4fc;
+  border-bottom: 2px solid #4f46e5;
+  padding-bottom: 8px;
+}
+
+.clientes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.total { color: #22c55e; font-weight: bold; }
+
+.tabla-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #4f46e5;
+}
+
+.clientes-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e1e2e;
+}
+
+.clientes-tabla th {
+  background: #4f46e5;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.clientes-tabla td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #2a2a3e;
+  color: #e2e8f0;
+}
+
+.clientes-tabla tr:hover { background: #2a2a3e; }
+.clientes-tabla tr:last-child td { border-bottom: none; }
+
+.fila-editando { background: #1e2a4e !important; }
+
+.fila-editando input {
+  background: #2a2a3e;
+  border: 1px solid #4f46e5;
+  border-radius: 6px;
+  color: white;
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.acciones { display: flex; gap: 8px; }
+
+.btn-editar {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-editar:hover { background: #4338ca; }
+
+.btn-eliminar {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-eliminar:hover { background: #b91c1c; }
+
+.btn-guardar-edit {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-guardar-edit:hover { background: #16a34a; }
+
+.btn-cancelar-edit {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-cancelar-edit:hover { background: #4b5563; }
+
+.btn-agregar {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.btn-agregar:hover { background-color: #4338ca; }
+
+.form-agregar {
+  background: #1e1e2e;
+  border: 1px solid #4f46e5;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-agregar h3 { color: #a5b4fc; margin: 0; }
+
+.form-agregar input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #4f46e5;
+  background: #2a2a3e;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-guardar {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-guardar:hover { background-color: #16a34a; }
+
+.btn-guardar:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.success-message {
+  background-color: #166534;
+  color: #bbf7d0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.error-message { color: #f87171; }
+.loading { color: #a5b4fc; }
+.no-data { color: #6b7280; text-align: center; padding: 40px; }

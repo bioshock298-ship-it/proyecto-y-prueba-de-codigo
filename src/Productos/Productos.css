@@ -1,0 +1,83 @@
+/* ===== RED LINK · Productos ===== */
+.productos-container {
+  padding: 0;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.productos-container h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #042C53;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.alert-stock {
+  background: #FAEEDA;
+  color: #854F0B;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 13px;
+  border-left: 3px solid #854F0B;
+}
+
+.productos-header {
+  margin: 10px 0;
+  font-weight: 600;
+  color: #3B6D11;
+  font-size: 13px;
+}
+
+.productos-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(4,44,83,0.08);
+}
+
+.productos-tabla th,
+.productos-tabla td {
+  padding: 10px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.productos-tabla th {
+  background: #185FA5;
+  color: #B5D4F4;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: none;
+}
+
+.productos-tabla tr:last-child td { border-bottom: none; }
+.productos-tabla tr:hover td { background: #F4F9FF; }
+.productos-tabla tr:nth-child(even) td { background: #FAFBFD; }
+.productos-tabla tr:nth-child(even):hover td { background: #F4F9FF; }
+
+.acciones { display: flex; gap: 6px; }
+
+.acciones button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  transition: opacity 0.2s, transform 0.1s;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.acciones button:hover { opacity: 0.85; transform: translateY(-1px); }
+
+.btn-editar    { background: #B5D4F4; color: #0C447C; }
+.btn-eliminar  { background: #FCEBEB; color: #A32D2D; }
+.btn-guardar-edit  { background: #EAF3DE; color: #3B6D11; }
+.btn-cancelar-edit { background: #F1EFE8; color: #5F5E5A; }
